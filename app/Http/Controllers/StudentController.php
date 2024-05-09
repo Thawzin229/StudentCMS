@@ -92,7 +92,8 @@ class StudentController extends Controller
     {
         $data = $request->validate([
             'old_password' => ['required','string','min:8','max:16'],
-            'new_password' => ['required','string','min:8','max:16'],
+            'new_password' => ['required','string','min:8','max:16',"regex:/[A-Z]/",
+            "regex:/[a-z]/","regex:/[0-9]/","regex:/[!@#$%&*()<>]/",],
         ]);
 
         $db_password = auth()->guard('web')->user()->password;
