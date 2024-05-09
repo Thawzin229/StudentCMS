@@ -30,8 +30,8 @@ Route::group(['middleware' => ['api'], 'prefix' => 'auth'], function ($router) {
 });
 
 #members
-Route::get("/members",[StudentController::class,"members"])->middleware('auth_api');
-Route::get("/members/{id}",[StudentController::class,"member"])->middleware('auth_api');
+Route::get("/members",[StudentController::class,"members"])->middleware(['auth_api','throttle:10,1']);
+Route::get("/members/{id}",[StudentController::class,"member"])->middleware(['auth_api','throttle:10,1']);
 
 # redirect routes for already logined user
 Route::group(['middleware' => ['api', 'authenticated'], 'prefix' => 'auth'], function ($router) {
