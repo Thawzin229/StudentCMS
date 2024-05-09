@@ -10,7 +10,7 @@
 
 </head>
 <body class="" style="height: 100vh;display: flex;justify-content: center;align-items: center">
-  <form class="" style="width: 50%" class="border p-20"action="/user/register" method="POST">
+  <form  style="width:50%" class="border p-20" action="/user/register" method="POST">
     @csrf
     <h1 class="mb-5 text-center">Register</h1>
     <div class="mb-5">
