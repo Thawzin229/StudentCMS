@@ -29,8 +29,9 @@
                         </div>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
-                                <x-nav-link class="text-white" href="/home" :active="request()->is('/home')">Home</x-nav-link>
-                                <x-nav-link class="text-white" href="/user/students" :active="request()->is('/user/students')">Students</x-nav-link>
+                                <a class="text-white inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out'" href="/home">Home</a>
+                                <a class="text-white inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out'" href="/user/students">Students</a>
+
                             </div>
                         </div>
                     </div>
