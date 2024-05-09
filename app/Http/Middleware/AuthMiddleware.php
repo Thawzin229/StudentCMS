@@ -16,8 +16,8 @@ class AuthMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth::check()){
-            return response()->json(['message' => 'Your are already authenticated.']);
+        if(Auth::guard('web')->check()){
+            return back();
         }
         return $next($request);
     }

@@ -15,10 +15,10 @@ class StudentController extends Controller
         $search = "%".request('search')."%";
         $class = request('class');
         $students = Student::when($search,function($query,$search){
-            $query->whereAny(['name','class','roll_no','father_name'],'like',$search)->latest()->simplePaginate(1)->withQueryString();
+            $query->whereAny(['name','class','roll_no','father_name'],'like',$search)->latest()->simplePaginate(10)->withQueryString();
         })
         ->when($class,function($query,$class){
-            $query->where('class',$class)->latest()->simplePaginate(1)->withQueryString();
+            $query->where('class',$class)->latest()->simplePaginate(10)->withQueryString();
         })
         ->latest()->simplePaginate(10)->withQueryString();
         return view('jobs.index', ["students" => $students]);

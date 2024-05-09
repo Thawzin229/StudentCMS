@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CMS</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -152,6 +152,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
                                     <div class="mt-2">
                                         <input type="text" name="name" id="first-name" autocomplete="given-name"
+                                        placeholder="example#Stacey"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                     @error('name')
@@ -163,6 +164,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Roll Number</label>
                                     <div class="mt-2">
                                         <input type="number" name="roll_no" id="first-name" autocomplete="given-name"
+                                        placeholder="example#22"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                     @error('roll_no')
@@ -173,6 +175,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Class</label>
                                     <div class="mt-2">
                                         <input type="text" name="class" id="first-name" autocomplete="given-name"
+                                        placeholder="example#A-Z"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                     @error('class')
@@ -184,6 +187,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Date of birth</label>
                                     <div class="mt-2">
                                         <input type="date" name="dob" id="first-name" autocomplete="given-name"
+                                        placeholder="example#22/9/2000"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                     @error('dob')
@@ -195,6 +199,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">NRC Number</label>
                                     <div class="mt-2">
                                         <input type="text" name="nrc" id="first-name" autocomplete="given-name"
+                                        placeholder="example#12/UKM(naing)-######"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                     @error('nrc')
@@ -206,6 +211,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Father's Name</label>
                                     <div class="mt-2">
                                         <input type="text" name="father_name" id="first-name" autocomplete="given-name"
+                                        placeholder="example#Mike"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                     @error('father_name')
@@ -217,6 +223,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Address</label>
                                     <div class="mt-2">
                                         <input  type="text" name="address" id="first-name" autocomplete="given-name"
+                                        placeholder="example#No,###,Yangon"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                     @error('address')
@@ -228,6 +235,7 @@
                                     <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
                                     <div class="mt-2">
                                         <input   type="text" name="ph" id="first-name" autocomplete="given-name"
+                                        placeholder="example#09-#######"
                                             class="block w-full rounded-md border-0 py-4 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                             
                 

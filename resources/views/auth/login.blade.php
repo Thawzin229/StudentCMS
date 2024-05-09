@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="" style="height: 100vh;display: flex;justify-content: center;align-items: center">
+<body style="height: 100vh;display: flex;justify-content: center;align-items: center">
   <form style="width: 50%" class="border p-20" action="/user/login" method="POST">
     <h1 class="mb-5 text-center">Login Here.</h1>
     @csrf

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CMS</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -145,9 +145,9 @@
 
     <div class="flex justify-end">
         <div class="flex" >
-            <form class="max-w-sm mx-auto" style="margin-right:40px" action="/user/students" method="GET">
+            <form class="max-w-sm mx-auto" style="margin-right:40px;margin-top: 20px" action="/user/students" method="GET">
                 @csrf
-                <label for="countries" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Filter by class</label>
+                <label for="countries" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white"></label>
                 <div class="flex">
                 <select  name='class' id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                   <option selected>Choose a class</option>
@@ -183,7 +183,7 @@
 </div>
 
   
-    <div class="">
+    <div class="mt-5">
 <div class="relative overflow-x-auto">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-center text-gray-900 uppercase dark:text-gray-400">
@@ -206,13 +206,14 @@
             </tr>
         </thead>
         <tbody class="text-center">
+            @if(count($students) !== 0 )
             @foreach ($students as $student)
-            <tr class="bg-white dark:bg-gray-800 my-5">
+            <tr class="bg-white dark:bg-gray-800 my-5 border shadow">
                 <td class="px-6 py-4">
                     {{ $student->name }}
                 </td>
                 <td class="px-6 py-4">
-                    {{ $student->roll_no }}
+                    LARA - {{ $student->roll_no }}
                 </td>
                 <td class="px-6 py-4">
                     {{ $student->class }}
@@ -230,6 +231,9 @@
                 </td>
             </tr>
             @endforeach
+            @else
+            <div class="text-center my-5 text-red-600">No Students Found!</div>
+            @endif
         </tbody>
     </table>
 </div>
