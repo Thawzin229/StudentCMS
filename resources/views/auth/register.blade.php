@@ -10,26 +10,26 @@
 
 </head>
 <body class="" style="height: 100vh;display: flex;justify-content: center;align-items: center">
-  <form class="" style="width: 50%" action="/user/register" method="POST">
+  <form class="" style="width: 50%" class="border p-20"action="/user/register" method="POST">
     @csrf
-    <h1 class="mb-5 text-center">Register Here.</h1>
+    <h1 class="mb-5 text-center">Register</h1>
     <div class="mb-5">
       <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
-      <input  name="name" type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com"  />
+      <input  name="name" type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="example@name"  />
       @error('name')
         <div class="text-red-600">{{ $message }}</div>
       @enderror
     </div>
     <div class="mb-5">
       <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-      <input  name="email" type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com"  />
+      <input  name="email" type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="example@gmail"  />
       @error('email')
       <div class="text-red-600">{{ $message }}</div>
       @enderror
     </div>
     <div class="mb-5">
       <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-      <input name="password" type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  />
+      <input name="password" type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="password" />
       @error('password')
       <div class="text-red-600">{{ $message }}</div> 
     @enderror
