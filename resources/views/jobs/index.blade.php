@@ -222,7 +222,7 @@
                 </td>
                 <td class="px-6 py-4">{{ $student->role }}</td>
                 <td class="px-6 py-4">
-                    @if($permission)
+                    @if(auth()->guard('web')->user()->is_admin)
                     <a href="/user/students/{{$student->id}}">View</a>
                     @else
                     <div>Access required</div>

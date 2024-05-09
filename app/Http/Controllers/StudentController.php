@@ -21,7 +21,7 @@ class StudentController extends Controller
             $query->where('class',$class)->latest()->simplePaginate(1)->withQueryString();
         })
         ->latest()->simplePaginate(10)->withQueryString();
-        return view('jobs.index', ["students" => $students,'permission'=> auth()->guard('web')->user()->can('view',User::class)]);
+        return view('jobs.index', ["students" => $students]);
     }
 
     public function createPage()
