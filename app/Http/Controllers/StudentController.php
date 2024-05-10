@@ -118,12 +118,12 @@ class StudentController extends Controller
         when($search,function($query,$search){
             $query->where('name','like',$search)->get()->toArray();
         })
-        ->where('is_admin',true)->take($limit)->get()->toArray();
+        ->where('is_admin',false)->take($limit)->get()->toArray();
         return response()->json(['members' => $members]);
     }
     public function member($id)
     {
-        $user = User::where('is_admin',true)->find($id);
+        $user = User::where('is_admin',false)->find($id);
         return $user  !== null ? response()->json(['member' => $user])
         :response()->json(['message' => 'No user found.'],400);
     }
